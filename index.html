@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Conversor de Divisas El Mercader</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Conversor de Divisas El Mercader
+        </h1>
+        <p>
+            "Nada de calculadoras ni indices bursatiles, con El mercader calculas tu moneda preferida al instante"
+        </p>
+    </header>
+
+    <main>
+        
+
+        <div class="layout">
+            <div class="sides left">
+                <img src="imgMexico.webp" alt="México">
+                <img src="imgBrasil.webp" alt="Brasil">
+                <img src="imgCanada.webp" alt="Canadá">
+            </div>
+
+            <div class="container">
+                <h2>
+                Desde dolares hasta euros, las monedas mas famosas del mundo aqui.
+                </h2>
+                <form id="formulario">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" placeholder="Ingrese la cantidad" id="cantidad" name="cantidad"> <br> <br>
+
+                <label for="divisaOrigen">De:</label> <br> <br>
+                <select name="divisaOrigen" id="divisaOrigen">
+                    <option value="">Cargando divisas...</option>
+                </select> <br> <br>
+
+                <label for="divisaDestino">A:</label> <br> <br>
+                <select name="divisaDestino" id="divisaDestino">
+                    <option value="">Cargando divisas...</option>
+                </select> <br> <br>
+
+                <button type="submit">Convertir <img src="" alt=""></button>
+                <button type="reset">Limpiar</button> <br> <br>
+
+                <div id="resultado"></div>
+            </form>
+            </div>
+
+            <div class="sides right">
+                <img src="imgEuropa.webp" alt="Europa">
+                <img src="imgEstadosUnidos.webp" alt="Estados Unidos">
+                <img src="imgChina.webp" alt="China">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
